@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../hojas_estilos/Testimonio.css';
 export function Testimonio() {
   return (
     <div className="contenedor__testimonio">
