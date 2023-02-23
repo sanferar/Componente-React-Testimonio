@@ -1,6 +1,8 @@
 import React from "react";
 import '../hojas_estilos/Testimonio.css';
-export function Testimonio() {
+
+
+export function Testimonio(props) {
   return (
     <div className="contenedor__testimonio">
 
@@ -11,9 +13,9 @@ export function Testimonio() {
       />
 
       <div className="contenedor__testimonio__textos">
-        <p className="contenedor__testimonio__textos__nombre">Jose Luis</p>
-        <p className="contenedor__testimonio__textos__cargo">Front-end developer</p>
-        <p className="contenedor__testimonio__textos__testimonio">"He trabajado con esta empresa y mola un huevo y parte del otro. He trabajado con esta empresa y mola un huevo y parte del otro."</p>
+        <p className="contenedor__testimonio__textos__nombre">{props.nombre}</p>
+        <p className="contenedor__testimonio__textos__cargo">{props.cargo}</p>
+        <p className="contenedor__testimonio__textos__testimonio">"{props.testimonio}"</p>
       </div>
 
     </div>
